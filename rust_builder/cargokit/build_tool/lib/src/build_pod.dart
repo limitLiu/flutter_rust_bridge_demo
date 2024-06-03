@@ -18,15 +18,20 @@ class BuildPod {
   final CargokitUserOptions userOptions;
 
   Future<void> build() async {
-    final targets = Environment.darwinArchs.map((arch) {
+    final List<Target> targets = [];
+
+    for (final arch in Environment.darwinArchs) {
+      if (['x86_64'].contains(arch)) {
+        continue;
+      }
       final target = Target.forDarwin(
           platformName: Environment.darwinPlatformName, darwinAarch: arch);
       if (target == null) {
         throw Exception(
             "Unknown darwin target or platform: $arch, ${Environment.darwinPlatformName}");
       }
-      return target;
-    }).toList();
+      targets.add(target);
+    }
 
     final environment = BuildEnvironment.fromEnvironment(isAndroid: false);
     final provider =

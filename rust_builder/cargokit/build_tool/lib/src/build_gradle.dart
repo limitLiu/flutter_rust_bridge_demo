@@ -20,14 +20,22 @@ class BuildGradle {
   final CargokitUserOptions userOptions;
 
   Future<void> build() async {
-    final targets = Environment.targetPlatforms.map((arch) {
+    final List<Target> targets = [];
+    for (final arch in Environment.targetPlatforms) {
+      if ([
+        "android-arm",
+        'android-x86',
+        'android-x64',
+      ].contains(arch)) {
+        continue;
+      }
       final target = Target.forFlutterName(arch);
       if (target == null) {
         throw Exception(
             "Unknown darwin target or platform: $arch, ${Environment.darwinPlatformName}");
       }
-      return target;
-    }).toList();
+      targets.add(target);
+    }
 
     final environment = BuildEnvironment.fromEnvironment(isAndroid: true);
     final provider =

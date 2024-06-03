@@ -53,7 +53,7 @@ plugins/
 .vscode/
 logs/
 
-lib/src/rust
+lib/src/rust/*
 !lib/src/rust/.gitkeep
 duplicated-derive/target/
 

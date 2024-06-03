@@ -5,10 +5,10 @@
 ## 引入 frb
 
 主要作用是让 Dart 调用 Rust 来完成反序列化工作，在此之前先把这个插件用上[flutter_rust_bridge](https://github.com/fzyzcjy/flutter_rust_bridge)。这个插件可以让 Flutter 无缝调用 Rust（基础原理是通过 CLI 生成 Dart 跟相应的 FFI 绑定），好处是可以把一些 Rust 实现得库包装一层给 Flutter 调用，而且操作非常简单，省去了自己配置/编译/构建的一系列工程问题，开箱即用。
-首先是安装该插件的 CLI，根据 [文档](https://cjycode.com/flutter_rust_bridge/) 的说法直接（写这篇东西的时候还是 ^2.0.0-dev.32，虽然目前还处于 dev 版，但是已经相当可用了）
+首先是安装该插件的 CLI，根据 [文档](https://cjycode.com/flutter_rust_bridge/) 的说法直接（写这篇东西的时候还是 ^2.0.0-dev.37，虽然目前还处于 dev 版，但是已经相当可用了）
 
 ```bash
-cargo install 'flutter_rust_bridge_codegen@^2.0.0-dev.32'
+cargo install 'flutter_rust_bridge_codegen@^2.0.0-dev.37'
 ```
 
 安装结束后，如果已经有现成的 Flutter 项目，则可以直接通过
@@ -108,7 +108,7 @@ edition = "2021"
 crate-type = ["cdylib", "staticlib"]
 
 [dependencies]
-flutter_rust_bridge = "=2.0.0-dev.32"
+flutter_rust_bridge = "=2.0.0-dev.37"
 serde = { version = "1.0.198", features = ["derive"] }
 serde_json = "1.0.116"
 ```
