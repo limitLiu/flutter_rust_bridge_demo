@@ -1,11 +1,11 @@
-name: deserialize_demo
+name: flutter_rust_bridge_demo
 description: "A new Flutter project."
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: 'none'
 
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.4.0-282.1.beta <4.0.0'
+  sdk: '>=3.4.1 <4.0.0'
 
 dependencies:
   flutter:
@@ -17,6 +17,7 @@ dependencies:
     path: rust_builder
   flutter_rust_bridge: 2.0.0-dev.37
   dio: ^5.4.3+1
+  camera: ^0.11.0+1
 
 dev_dependencies:
   flutter_test:

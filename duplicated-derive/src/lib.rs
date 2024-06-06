@@ -9,7 +9,7 @@ pub fn derive_duplicated(i: TokenStream) -> TokenStream {
     Ok(quote::quote! {
       impl #struct_name {
           pub fn from(json: String) -> Result<#struct_name> {
-              Ok(serde_json::from_str::<#struct_name>(&json)?)
+              Ok(sonic_rs::from_str::<#struct_name>(&json)?)
           }
       }
     })

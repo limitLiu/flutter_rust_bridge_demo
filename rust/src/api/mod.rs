@@ -1,6 +1,5 @@
-//
-// Do not put code in `mod.rs`, but put in e.g. `simple.rs`.
-//
-
+pub mod bar_decoder;
+pub mod err;
 pub mod init;
 pub mod simple;
+
