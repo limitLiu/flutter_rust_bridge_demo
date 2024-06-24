@@ -15,9 +15,10 @@ dependencies:
   cupertino_icons: ^1.0.6
   rust_lib_deserialize_demo:
     path: rust_builder
-  flutter_rust_bridge: 2.0.0-dev.37
+  flutter_rust_bridge: 2.0.0
   dio: ^5.4.3+1
   camera: ^0.11.0+1
+  qr_code_scanner: ^1.0.1
 
 dev_dependencies:
   flutter_test:

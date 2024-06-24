@@ -1,4 +1,4 @@
-use std::result;
+use std::{error, result};
 
 use crate::frb_generated::SseEncode;
 
@@ -9,6 +9,12 @@ pub enum FFIError {
 }
 
 pub type Result<T> = result::Result<T, FFIError>;
+
+impl error::Error for FFIError {
+  fn source(&self) -> Option<&(dyn error::Error + 'static)> {
+    Some(self)
+  }
+}
 
 impl From<sonic_rs::Error> for FFIError {
   fn from(value: sonic_rs::Error) -> Self {
@@ -30,4 +36,3 @@ impl std::fmt::Display for FFIError {
     }
   }
 }
-
