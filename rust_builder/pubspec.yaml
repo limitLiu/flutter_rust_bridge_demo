@@ -1,4 +1,4 @@
-name: rust_lib_deserialize_demo
+name: rust_lib_flutter_rust_bridge_demo
 description: "Utility to build Rust code"
 version: 0.0.1
 publish_to: none

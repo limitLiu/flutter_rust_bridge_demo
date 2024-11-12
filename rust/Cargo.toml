@@ -1,5 +1,5 @@
 [package]
-name = "rust_lib_deserialize_demo"
+name = "rust_lib_flutter_rust_bridge_demo"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,7 +7,7 @@ edition = "2021"
 crate-type = ["cdylib", "staticlib"]
 
 [dependencies]
-flutter_rust_bridge = "=2.1.0"
+flutter_rust_bridge = "=2.6.0"
 serde = { version = "1.0.198", features = ["derive"] }
 sonic-rs = "0.3"
 duplicated-derive = { path = "../duplicated-derive" }

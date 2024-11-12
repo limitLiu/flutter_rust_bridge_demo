@@ -5,26 +5,23 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.4.1 <4.0.0'
+  sdk: ^3.5.4
 
 dependencies:
   flutter:
     sdk: flutter
 
-
-  cupertino_icons: ^1.0.6
-  rust_lib_deserialize_demo:
+  cupertino_icons: ^1.0.8
+  rust_lib_flutter_rust_bridge_demo:
     path: rust_builder
-  flutter_rust_bridge: 2.1.0
+  flutter_rust_bridge: 2.6.0
   dio: ^5.4.3+1
-  camera: ^0.11.0+1
-  qr_code_scanner: ^1.0.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^3.0.0
+  flutter_lints: ^4.0.0
   integration_test:
     sdk: flutter
 

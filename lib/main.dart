@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_rust_bridge_demo/src/camera.dart';
 import 'package:flutter_rust_bridge_demo/src/deserialize.dart';
 import 'package:flutter_rust_bridge_demo/src/rust/frb_generated.dart';
 
@@ -35,17 +34,6 @@ class Main extends StatelessWidget {
                 MaterialPageRoute(
                   builder: (context) => const Deserialize(),
                   settings: const RouteSettings(name: '/Deserialize'),
-                ),
-              );
-            },
-          ),
-          ListTile(
-            title: const Text("Camera"),
-            onTap: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) => const Camera(),
-                  settings: const RouteSettings(name: '/Camera'),
                 ),
               );
             },

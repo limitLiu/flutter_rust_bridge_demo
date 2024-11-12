@@ -1,4 +1,5 @@
-rust_input: rust/src/api/**/*.rs
+rust_input: crate::api
+rust_root: rust/
 dart_output: lib/src/rust
 web: false
 enable_lifetime: true
