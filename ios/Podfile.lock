@@ -19,10 +19,10 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/rust_lib_flutter_rust_bridge_demo/ios"
 
 SPEC CHECKSUMS:
-  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
-  integration_test: 252f60fa39af5e17c3aa9899d35d908a0721b573
-  rust_lib_flutter_rust_bridge_demo: b8f3bbda40bca009b05eb97e47aebff061f2958f
+  Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
+  integration_test: 4a889634ef21a45d28d50d622cf412dc6d9f586e
+  rust_lib_flutter_rust_bridge_demo: 169fb28bd409d52cb8c8a923855ce794f78d5322
 
-PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
+PODFILE CHECKSUM: 4f1c12611da7338d21589c0b2ecd6bd20b109694
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2
